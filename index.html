@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Presentation</title>
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css">
+</head>
+
+<style>
+    .p80img {
+        width: 80%;
+    }
+
+    .p60img {
+        width: 60%;
+    }
+
+    .p45img {
+        width: 45%;
+    }
+
+
+    .lineSection {
+        display: flex !important;
+    }
+
+    .columnSection {
+        display: grid !important;
+    }
+</style>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h5>SAPUI5/CAP, Architecture and JavaScript</h5>
+                <img class="p60img" src="./assets/pyramid.png">
+            </section>
+            <section data-transition="slide" data-background-transition="zoom">
+                <h5>Possible growth directions and current state of affairs</h5>
+                <a href="https://feature-sliced.design/ru/docs/reference/isolation/coupling-cohesion"  target="_blank">
+                    <img class="p60img" src="./assets/relations.png"/>
+                </a>
+            </section>
+            <section>
+                <h5>Architecture Styles</h5>
+                <a href="https://blog.bytebytego.com/p/ep68-top-architectural-styles" target="_blank">
+                    <img class="p45img" src="./assets/ArchitectureTypes.jpeg" />
+                </a>
+            </section>
+            <section data-background="#4d7e65" class="columnSection">
+                <h5>Clean Architecture</h5>
+                <a href="https://habr.com/ru/companies/mobileup/articles/335382/" target="_blank">
+                    <img class="p80img" src="./assets/CleanArchitecturePart1.png" />
+                </a>
+                <a href="https://habr.com/ru/companies/mobileup/articles/335382/" target="_blank">
+                    <img class="p80img" src="./assets/CleanArchitecturePart2.png" />
+                </a>
+            </section>
+            <section data-background="#b5533c">
+                <h5>Other Architecture Principles</h5>
+                <ul>
+                    <li>SOLID</li>
+                    <li>GRASP</li>
+                    <li>GoF</li>
+                    <li>KISS - Keep It Simple, Stupid</li>
+                    <li>DRY - Don't Repeat Yourself</li>
+                    <li>YAGNI - You Aren't Gonna Need It</li>
+                    <li>BDUF - Big Design Up Front</li>
+                    <li>APO - Avoid Premature Optimization</li>
+                    <li>LoD - Law of Demeter</li>
+                </ul>
+            </section>
+            <section>
+                <h5>TODO</h5>
+            </section>
+            <section>
+                <h5>TODO</h5>
+            </section>
+            <section>
+                <h5>TODO</h5>
+            </section>
+        </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
