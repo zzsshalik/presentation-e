@@ -43,6 +43,7 @@
 	.lineSection {
 		display: flex !important;
 		align-items: center;
+		justify-content: space-around;
 	}
 
 	.columnSection {
@@ -54,14 +55,14 @@
 
 	<div class="reveal">
 		<div class="slides">
-			<section>
-				<h5>SAPUI5/CAP, Architecture and JavaScript</h5>
+			<section class="lineSection">
+				<h5>SAPUI5/CAP Architecture and JavaScript</h5>
 				<img class="p60img" src="./assets/pyramid.png">
 			</section>
-			<section data-transition="slide" data-background-transition="zoom">
+			<section data-transition="slide" data-background-transition="zoom" class="lineSection">
 				<h5>Possible growth directions and current state of affairs</h5>
 				<a href="https://feature-sliced.design/ru/docs/reference/isolation/coupling-cohesion" target="_blank">
-					<img class="p60img" src="./assets/relations.png" />
+					<img src="./assets/relations.png" />
 				</a>
 			</section>
 			<section>
@@ -106,37 +107,20 @@
 					<li>LoD - Law of Demeter</li>
 				</ul>
 			</section>
-			<section data-markdown>
+			<section>
 				<h5>SAPUI5 AND PART OF IMPLEMENTATION</h5>
-				<code class="javascript" contenteditable style="font-size: 18px;">
-					const m = new Metadata();
-	
-					m.defineEntity('EntityName', {
-						'mixins': ['MixinName'],
-						'implementation': '/path/EntityNameImplementation.js',
-						'properties': {
-							'uuid': { 'type': 'uuid', 'key': true },
-							'parent': { 'type': 'referenceToOne', 'key': 'EntityName' }
-						}
-					});
-
-					m.defineMixin('MixinName', {
-						properties: {
-							'createdAt': { 'type': 'datetime' },
-							'createdBy': { 'type': 'string' },
-							'modifiedAt': { 'type': 'datetime' },
-							'modifiedBy': { 'type': 'string' }
-						}
-					});
-				
-					return m;
-				</code>
+				<img style="width: 600px;" src="./assets/Metadata.png" />
 			</section>
 			<section>
-				<h5>TODO</h5>
+				<h5>Abstractions</h5>
+				<img style="width: 550px;" src="./assets/QueryBuilder.png" />
 			</section>
 			<section>
-				<h5>TODO</h5>
+				<h5>Abstractions</h5>
+				<div class="lineSection">
+					<img style="width: 450px;" src="./assets/Prototypes.png" />
+					<img style="width: 450px;" src="./assets/ProxyWithPrototypes.png" />
+				</div>
 			</section>
 		</div>
 	</div>
